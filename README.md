@@ -1,4 +1,4 @@
-# PostCSS Simple Variables [![Build Status][ci-img]][ci]
+# PostCSS Variables [![Build Status][ci-img]][ci]
 
 <img align="right" width="95" height="95"
      title="Philosopher’s stone, logo of PostCSS"
@@ -59,7 +59,7 @@ $(prefix)_button { }
 ## Usage
 
 ```js
-postcss([ require('postcss-simple-vars') ])
+postcss([ require('postcss-vars') ])
 ```
 
 See [PostCSS] docs for examples for your environment.
@@ -69,7 +69,7 @@ See [PostCSS] docs for examples for your environment.
 Call plugin function to set options:
 
 ```js
-.pipe(postcss([ require('postcss-simple-vars')({ silent: true }) ]))
+.pipe(postcss([ require('postcss-vars')({ silent: true }) ]))
 ```
 
 ### `variables`
@@ -87,7 +87,7 @@ module.exports = {
 // gulpfile.js
 
 var colors = require('./config/colors');
-var vars   = require('postcss-simple-vars')
+var vars   = require('postcss-vars')
 
 gulp.task('css', function () {
      return gulp.src('./src/*.css')

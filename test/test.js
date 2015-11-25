@@ -7,7 +7,7 @@ var test = function (input, output, opts) {
     expect(postcss(vars(opts)).process(input).css).to.eql(output);
 };
 
-describe('postcss-simple-vars', function () {
+describe('postcss-vars', function () {
 
     it('replaces variables in values', function () {
         test('$size: 10px;\na{ width: $size; height: $size }',

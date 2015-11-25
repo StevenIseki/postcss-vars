@@ -64,7 +64,7 @@ var atruleParams = function (variables, node, opts, result) {
     node.params = bothSyntaxes(variables, node, node.params, opts, result);
 };
 
-module.exports = postcss.plugin('postcss-simple-vars', function (opts) {
+module.exports = postcss.plugin('postcss-vars', function (opts) {
     if ( typeof opts === 'undefined' ) opts = { };
 
     if ( !opts.unknown ) {
